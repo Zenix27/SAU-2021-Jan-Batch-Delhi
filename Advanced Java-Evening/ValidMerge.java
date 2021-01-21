@@ -17,7 +17,7 @@ public class ValidMerge
 	{
 		try 
 		{
-			    File fil1 = new File("/Users/Zenix/Desktop/AU Spring 2021/SAU-2021-Jan-Batch-Delhi/Advanced Java-Evening/xmlFile1.xml");
+		File fil1 = new File("/Users/Zenix/Desktop/AU Spring 2021/SAU-2021-Jan-Batch-Delhi/Advanced Java-Evening/xmlFile1.xml");
 	        File fil2 = new File("/Users/Zenix/Desktop/AU Spring 2021/SAU-2021-Jan-Batch-Delhi/Advanced Java-Evening/xmlFile2.xml");
 	        
 	        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();

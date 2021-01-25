@@ -1,0 +1,8 @@
+<html>
+    <head>
+        <title>Result</title>
+    </head>
+    <body>
+        Result:  ${result}
+    </body>
+</html>

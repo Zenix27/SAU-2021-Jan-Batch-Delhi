@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  <bean id="rectangle" class="com.au.spring.Rectangle">
+    <property name="points">
+    <map>
+         <entry key="PointA" value-ref="PointA"/>
+         <entry key="PointB" value-ref="PointB"/>
+         <entry key="PointC" value-ref="PointC"/>
+         <entry key="PointD" value-ref="PointD"/>
+    </map>
+    </property>
+    <!--<property name="PointA" ref="PointA"/>
+    <property name="PointB" ref="PointB"/>
+    <property name="PointC" ref="PointC"/>-->
+  </bean>
+  <bean id="triangle" class="com.au.spring.Triangle">
+    <property name="points">
+    <map>
+         <entry key="PointA" value-ref="pointA"/>
+         <entry key="PointB" value-ref="pointB"/>
+         <entry key="PointC" value-ref="pointC"/>
+    </map>
+    </property>
+    <property name="height" value="25"/>
+    <property name="width" value="35"/>
+  </bean>
+  
+  <bean id="PointA" class="com.au.spring.Point">
+     <property name="x" value="10"/>
+     <property name="y" value="20"/>
+  </bean>
+  
+  <bean id="PointB" class="com.au.spring.Point">
+       <property name="x" value="30"/>
+       <property name="y" value="40"/>
+  </bean>
+  <bean id="PointC" class="com.au.spring.Point">
+        <property name="x" value="50"/>
+        <property name="y" value="60"/>
+  </bean>
+  <bean id="PointD" class="com.au.spring.Point">
+        <property name="x" value="70"/>
+        <property name="y" value="80"/>
+  </bean>
+  <bean id="pointA" class="com.au.spring.Point">
+     <property name="x" value="100"/>
+     <property name="y" value="200"/>
+  </bean>
+  
+  <bean id="pointB" class="com.au.spring.Point">
+       <property name="x" value="300"/>
+       <property name="y" value="400"/>
+  </bean>
+  <bean id="pointC" class="com.au.spring.Point">
+        <property name="x" value="500"/>
+        <property name="y" value="600"/>
+  </bean>
+</beans>

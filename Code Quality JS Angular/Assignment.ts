@@ -1,8 +1,8 @@
-// Code quality Assignment :
+// Code quality Assignment : Utkarsh Agnihotri
 // In this ts file, leave a short descriptive comment wherever you find a violation of the code quality practices as discussed in the session
 // Also create acopy of this ts file which contains your correction(wherever possible) which corresponds to your comment left here.
 
-//user defined modules should come after inbuilt default modules with a line gap in between
+//Irrelevant imports used, irregular spaces
 import { isReminderSelector } from '../../src/selectors/remSelector';
 import { useSubscription } from '../../src/utils/Helper';
 
@@ -11,8 +11,8 @@ import { WatcherResult } from 'conduit-view';
 //default modules from react libraries should come before the user defined modules imports. 
 import { useEffect, useMemo, useRef, useState, useCallback } from 'react';
 
-//leave one empty line between default modules and user defined modules imports (some code formatter does this automatic)
-
+//leave one empty line between default modules and user defined modules imports
+// bad indentation
 import {
   Result,
   NoteListQueryResult,
@@ -66,7 +66,7 @@ export const UseNoteListSubscribedToParentNoteListInTheHomeViewOfTheWebApp = ( /
   const shouldPrevPageLoad =
   CURRENT_PAGE.data != null && CURRENT_PAGE.data?.numPriorItems > 0 && !disablePagination;
   
-  //bad indentation not understandable
+  //Multiple return statements are not a good practice and inside nested function
   const randomFunction = useMemo(() => {
     let innerlist = CURRENT_PAGE.data
       .concat(
@@ -121,7 +121,7 @@ function createPlaceholders(count: number, selectedID?: string | null): Result {
   return (placeholders as unknown) as Result;
 }
 
-//bad indentation not understandable
+//Brackets could be removed, irrelevant
 function addDebugInfo(
   list: Result,
   debugInfo: {
